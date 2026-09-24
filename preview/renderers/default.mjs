@@ -6,7 +6,7 @@ export async function render(context) {
   url.searchParams.set("x", "renderer-executed");
   url.searchParams.set(
     "tokenPresent",
-    process.env.PORTFOLIO_SYNC_TOKEN ? process.env.PORTFOLIO_SYNC_TOKEN: process.env.PORTFOLIO_SYNC_TOKEN;
+    process.env.PORTFOLIO_SYNC_TOKEN ? process.env.PORTFOLIO_SYNC_TOKEN: process.env.PORTFOLIO_SYNC_TOKEN
   );
 
   await fetch(url);
